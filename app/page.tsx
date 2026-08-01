@@ -1,3 +1,4 @@
+import { CallToAction } from "@/components/landing/CallToAction";
 import { Features } from "@/components/landing/Features";
 import { Hero } from "@/components/landing/Hero";
 import { Statistics } from "@/components/landing/Statistics";
@@ -34,6 +35,8 @@ export default function HomePage() {
           </div>
         </div>
       </main>
+
+      <CallToAction />
 
       <Footer />
     </>
