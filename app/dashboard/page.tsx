@@ -1,3 +1,4 @@
+import { DashboardHeader } from "@/components/dashboard/DashboardHeader";
 import { Sidebar } from "@/components/layout/Sidebar";
 
 export default function DashboardPage() {
@@ -6,19 +7,13 @@ export default function DashboardPage() {
       <Sidebar />
 
       <main className="min-h-screen px-6 py-10 lg:pl-80 lg:pr-10">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
-          Cooperative overview
-        </p>
+        <DashboardHeader />
 
-        <h1 className="mt-3 text-3xl font-bold tracking-tight text-white">
-          Dashboard
-        </h1>
-
-        <p className="mt-3 max-w-2xl leading-7 text-slate-400">
-          This is the private Sahakari Nexus workspace. In the next phase, we
-          will fill it with search, statistic cards, recent analysis, and risk
-          intelligence.
-        </p>
+        <section className="mt-8 rounded-2xl border border-dashed border-slate-700 p-6">
+          <p className="text-sm text-slate-400">
+            Dashboard content will appear here in the next lessons.
+          </p>
+        </section>
       </main>
     </div>
   );
