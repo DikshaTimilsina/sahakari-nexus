@@ -1,5 +1,6 @@
 import { Features } from "@/components/landing/Features";
 import { Hero } from "@/components/landing/Hero";
+import { Statistics } from "@/components/landing/Statistics";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { InsightPreview } from "@/components/ui/InsightPreview";
@@ -13,6 +14,8 @@ export default function HomePage() {
       <Hero />
 
       <Features />
+
+      <Statistics />
 
       <main className="bg-slate-950 px-6 py-20 sm:px-10">
         <div className="mx-auto max-w-5xl">
