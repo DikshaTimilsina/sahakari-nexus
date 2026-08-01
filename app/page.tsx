@@ -1,6 +1,7 @@
+import { Features } from "@/components/landing/Features";
+import { Hero } from "@/components/landing/Hero";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/Navbar";
-import { Hero } from "@/components/landing/Hero";
 import { InsightPreview } from "@/components/ui/InsightPreview";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -10,6 +11,8 @@ export default function HomePage() {
       <Navbar />
 
       <Hero />
+
+      <Features />
 
       <main className="bg-slate-950 px-6 py-20 sm:px-10">
         <div className="mx-auto max-w-5xl">
