@@ -13,3 +13,11 @@ export type RecentAnalysisData = {
   status: AnalysisStatus;
   updatedAt: string;
 };
+
+export type RiskLevel = "Low" | "Watch" | "High";
+
+export type RiskFactor = {
+  label: string;
+  score: number;
+  level: RiskLevel;
+};
