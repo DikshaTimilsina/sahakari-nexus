@@ -1,4 +1,6 @@
 import { DashboardHeader } from "@/components/dashboard/DashboardHeader";
+import { RecentAnalysis } from "@/components/dashboard/RecentAnalysis";
+import { RiskOverview } from "@/components/dashboard/RiskOverview";
 import { SearchBar } from "@/components/dashboard/SearchBar";
 import { StatCards } from "@/components/dashboard/StatCards";
 import { Sidebar } from "@/components/layout/Sidebar";
@@ -19,11 +21,10 @@ export default function DashboardPage() {
           <StatCards />
         </div>
 
-        <section className="mt-7 rounded-2xl border border-dashed border-slate-700 p-6">
-          <p className="text-sm text-slate-400">
-            Recent analysis and risk overview will appear here next.
-          </p>
-        </section>
+        <div className="mt-7 grid gap-7 xl:grid-cols-2">
+          <RecentAnalysis />
+          <RiskOverview />
+        </div>
       </main>
     </div>
   );
