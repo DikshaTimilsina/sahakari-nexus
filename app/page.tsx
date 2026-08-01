@@ -1,25 +1,42 @@
-import { Sidebar } from "@/components/layout/Sidebar";
+import { Navbar } from "@/components/layout/Navbar";
+import { InsightPreview } from "@/components/ui/InsightPreview";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
-export default function DashboardPage() {
+export default function HomePage() {
   return (
-    <div className="min-h-screen bg-slate-950">
-      <Sidebar />
+    <>
+      <Navbar />
 
-      <main className="min-h-screen px-6 py-10 lg:pl-80 lg:pr-10">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
-          Cooperative overview
-        </p>
+      <main className="min-h-screen px-6 py-16 sm:px-10">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-12 text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
+              AI Powered Cooperative Intelligence
+            </p>
 
-        <h1 className="mt-3 text-3xl font-bold tracking-tight text-white">
-          Dashboard
-        </h1>
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+              Sahakari Nexus
+            </h1>
 
-        <p className="mt-3 max-w-2xl leading-7 text-slate-400">
-          This is the private Sahakari Nexus workspace. In the next phase, we
-          will fill it with search, statistic cards, recent analysis, and risk
-          intelligence.
-        </p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+              A smarter way for cooperatives to understand financial health,
+              manage risk, and make confident decisions.
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
+            <SectionHeading
+              eyebrow="Built for clarity"
+              title="Turn cooperative data into confident decisions"
+            >
+              Sahakari Nexus will bring analysis, risk insights, comparisons,
+              and relationships into one clear intelligence platform.
+            </SectionHeading>
+
+            <InsightPreview />
+          </div>
+        </div>
       </main>
-    </div>
+    </>
   );
 }
