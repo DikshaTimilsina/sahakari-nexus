@@ -1,3 +1,4 @@
+import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { InsightPreview } from "@/components/ui/InsightPreview";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -7,7 +8,7 @@ export default function HomePage() {
     <>
       <Navbar />
 
-      <main className="min-h-screen px-6 py-16 sm:px-10">
+      <main id="platform" className="min-h-screen px-6 py-16 sm:px-10">
         <div className="mx-auto max-w-5xl">
           <div className="mb-12 text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
@@ -33,10 +34,14 @@ export default function HomePage() {
               and relationships into one clear intelligence platform.
             </SectionHeading>
 
-            <InsightPreview />
+            <div id="insights">
+              <InsightPreview />
+            </div>
           </div>
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }
