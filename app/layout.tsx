@@ -20,5 +20,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {children}
       </body>
     </html>
-  );
+  )
 }
