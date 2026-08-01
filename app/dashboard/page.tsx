@@ -1,5 +1,6 @@
 import { DashboardHeader } from "@/components/dashboard/DashboardHeader";
 import { SearchBar } from "@/components/dashboard/SearchBar";
+import { StatCards } from "@/components/dashboard/StatCards";
 import { Sidebar } from "@/components/layout/Sidebar";
 
 export default function DashboardPage() {
@@ -14,9 +15,13 @@ export default function DashboardPage() {
           <SearchBar />
         </div>
 
-        <section className="mt-6 rounded-2xl border border-dashed border-slate-700 p-6">
+        <div className="mt-7">
+          <StatCards />
+        </div>
+
+        <section className="mt-7 rounded-2xl border border-dashed border-slate-700 p-6">
           <p className="text-sm text-slate-400">
-            Dashboard content will appear here in the next lessons.
+            Recent analysis and risk overview will appear here next.
           </p>
         </section>
       </main>
