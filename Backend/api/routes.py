@@ -21,16 +21,28 @@ from fastapi import APIRouter, HTTPException, UploadFile, File, Depends
 from fastapi.responses import PlainTextResponse
 from sqlalchemy.orm import Session
 
-from database.database import SessionLocal, get_db
-from database import models as db_models
+try:
+    from ..database.database import SessionLocal, get_db
+    from ..database import models as db_models
 
-from ai.data_generator import generate_healthy_cooperative, generate_collapsing_cooperative
-from ai.graph_builder import build_graph, to_vis_json
-from ai.risk_engine import score_cooperative
-from ai.ai_explanation import generate_explanation
-from ai import ocr_service
-from ai import llm_extractor
-from reports.report_generator import generate_text_report
+    from ..ai.data_generator import generate_healthy_cooperative, generate_collapsing_cooperative
+    from ..ai.graph_builder import build_graph, to_vis_json
+    from ..ai.risk_engine import score_cooperative
+    from ..ai.ai_explanation import generate_explanation
+    from ..ai import ocr_service
+    from ..ai import llm_extractor
+    from ..reports.report_generator import generate_text_report
+except ImportError:
+    from database.database import SessionLocal, get_db
+    from database import models as db_models
+
+    from ai.data_generator import generate_healthy_cooperative, generate_collapsing_cooperative
+    from ai.graph_builder import build_graph, to_vis_json
+    from ai.risk_engine import score_cooperative
+    from ai.ai_explanation import generate_explanation
+    from ai import ocr_service
+    from ai import llm_extractor
+    from reports.report_generator import generate_text_report
 
 router = APIRouter()
 
@@ -115,7 +127,7 @@ def _create_job(db: Session, source: str) -> str:
 
 # ---------- demo (synthetic) path ----------
 
-@router.post("/demo/analyze/{scenario}")
+@router.api_route("/demo/analyze/{scenario}", methods=["GET", "POST"])
 def analyze_demo(scenario: Literal["healthy", "collapsing"], db: Session = Depends(get_db)):
     if scenario not in SCENARIO_GENERATORS:
         raise HTTPException(400, "scenario must be 'healthy' or 'collapsing'")

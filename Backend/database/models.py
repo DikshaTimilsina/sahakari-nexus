@@ -10,7 +10,10 @@ from datetime import datetime
 from sqlalchemy import Column, String, Float, Boolean, DateTime, ForeignKey, JSON, Text
 from sqlalchemy.orm import relationship
 
-from database.database import Base
+try:
+    from .database import Base
+except ImportError:
+    from database.database import Base
 
 
 def _uuid() -> str:

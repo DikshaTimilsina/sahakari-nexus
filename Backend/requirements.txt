@@ -4,3 +4,6 @@ networkx
 pydantic
 python-multipart
 google-generativeai
+sqlalchemy
+psycopg-binary
+pdfplumber

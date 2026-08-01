@@ -7,7 +7,11 @@ pipe this string into the docx/pdf toolchain of your choice.
 """
 
 from datetime import datetime
-from utils.helpers import format_currency_npr
+
+try:
+    from ..utils.helpers import format_currency_npr
+except ImportError:
+    from utils.helpers import format_currency_npr
 
 
 def generate_text_report(result: dict) -> str:

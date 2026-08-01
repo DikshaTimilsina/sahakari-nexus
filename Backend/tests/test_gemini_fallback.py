@@ -4,8 +4,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from ai.ai_explanation import generate_explanation
-from ai.llm_extractor import ExtractionUnavailable, structure
+from ..ai.ai_explanation import generate_explanation
+from ..ai.llm_extractor import ExtractionUnavailable, structure
 
 
 def test_explanation_uses_fallback_when_key_missing(monkeypatch):
