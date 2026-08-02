@@ -1,4 +1,4 @@
-# 🚀 Sahakari Nexus
+#  Sahakari Nexus
 
 > **Turning Cooperative Data into Trust**
 
@@ -6,7 +6,7 @@ An AI-powered Cooperative Risk Intelligence Platform designed for Nepal to impro
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Sahakari Nexus is a prototype platform that helps users understand the financial health of cooperatives by transforming complex financial information into simple, visual, and actionable insights.
 
@@ -16,7 +16,7 @@ This project was developed as a hackathon MVP with a focus on user experience, s
 
 ---
 
-# 🇳🇵 Why Sahakari Nexus?
+#  Why Sahakari Nexus?
 
 Nepal's cooperative sector serves millions of members and plays an important role in the country's economy. Recent cooperative failures have highlighted the need for greater transparency and better access to understandable financial information.
 
@@ -33,7 +33,7 @@ Sahakari Nexus aims to make cooperative information more understandable through 
 
 ---
 
-# ✨ Features
+#  Features
 
 ## Current MVP
 
@@ -51,7 +51,7 @@ Sahakari Nexus aims to make cooperative information more understandable through 
 
 ---
 
-# 🧠 Planned AI Workflow
+#  Planned AI Workflow
 
 Financial Report
 
@@ -89,7 +89,7 @@ Recommendations
 
 ---
 
-# 💡 Key Modules
+#  Key Modules
 
 ### Dashboard
 
@@ -257,7 +257,7 @@ Sahakari Nexus aims to contribute to:
 
 ---
 
-# 🎯 Project Status
+# Project Status
 
 This repository contains the hackathon MVP.
 
@@ -284,7 +284,7 @@ Some AI and backend automation components are planned for future development.
 
 ---
 
-# 🤝 Contributing
+# Contributing
 
 Contributions, suggestions, and feedback are welcome.
 
@@ -296,7 +296,7 @@ MIT License
 
 ---
 
-# ⭐ Vision
+# Vision
 
 **Today, Sahakari Nexus demonstrates a smarter way to understand cooperative health.**
 
