@@ -1,36 +1,303 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Sahakari Nexus
 
-## Getting Started
+> **Turning Cooperative Data into Trust**
 
-First, run the development server:
+An AI-powered Cooperative Risk Intelligence Platform designed for Nepal to improve transparency and support better decision-making through financial analytics, interactive dashboards, and explainable insights.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Sahakari Nexus is a prototype platform that helps users understand the financial health of cooperatives by transforming complex financial information into simple, visual, and actionable insights.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Instead of manually reading lengthy audit reports and financial statements, users interact with an intuitive dashboard that presents financial indicators, risk summaries, cooperative comparisons, and explainable insights.
 
-## Learn More
+This project was developed as a hackathon MVP with a focus on user experience, scalable architecture, and a clear roadmap for future AI integration.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 🇳🇵 Why Sahakari Nexus?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Nepal's cooperative sector serves millions of members and plays an important role in the country's economy. Recent cooperative failures have highlighted the need for greater transparency and better access to understandable financial information.
 
-## Deploy on Vercel
+Current challenges include:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Manual review of financial reports
+* Difficult-to-understand financial statements
+* Limited transparency for ordinary members
+* No simple way to compare cooperatives
+* Time-consuming audit processes
+* Limited decision-support tools
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Sahakari Nexus aims to make cooperative information more understandable through intuitive visualizations and intelligent analysis.
+
+---
+
+# ✨ Features
+
+## Current MVP
+
+* Modern responsive dashboard
+* Upload interface for financial documents
+* Cooperative Health Score interface
+* Trust Index
+* Financial KPI cards
+* Risk Findings panel
+* Financial ratio visualization
+* Cooperative comparison dashboard
+* Interactive graph visualization
+* AI explanation interface (prototype)
+* Clean startup-style UI
+
+---
+
+# 🧠 Planned AI Workflow
+
+Financial Report
+
+⬇
+
+OCR Extraction
+
+⬇
+
+AI Structured Data Extraction
+
+⬇
+
+Financial Analysis
+
+⬇
+
+Risk Engine
+
+⬇
+
+Health Score
+
+⬇
+
+Trust Index
+
+⬇
+
+Dashboard
+
+⬇
+
+Recommendations
+
+---
+
+# 💡 Key Modules
+
+### Dashboard
+
+Displays:
+
+* Health Score
+* Trust Index
+* Risk level
+* Financial KPIs
+* Financial ratios
+* Risk summary
+
+---
+
+### Cooperative Comparison
+
+Compare multiple cooperatives based on:
+
+* Health Score
+* Liquidity
+* Loan quality
+* Governance indicators
+* Overall financial performance
+
+---
+
+### Risk Analysis
+
+Designed to identify potential warning signs such as:
+
+* Loan concentration
+* Liquidity concerns
+* Governance-related indicators
+* Financial ratio deviations
+
+---
+
+### Explainable AI
+
+Future versions will provide simple-language explanations of financial indicators, making reports easier to understand for non-technical users.
+
+---
+
+# 🏗 System Architecture
+
+Frontend (Next.js)
+
+↓
+
+Backend (FastAPI)
+
+↓
+
+OCR Layer
+
+↓
+
+AI Extraction
+
+↓
+
+Risk Analysis
+
+↓
+
+Database
+
+↓
+
+Dashboard
+
+---
+
+# ⚙ Tech Stack
+
+## Frontend
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* React
+* Recharts
+* React Flow
+
+## Backend
+
+* FastAPI
+* Python
+
+## Database
+
+* SQLite (MVP)
+* PostgreSQL (Future)
+
+## AI
+
+* Gemini API
+
+## OCR
+
+* PyMuPDF
+* Tesseract OCR
+
+## Graph Analytics
+
+* NetworkX
+
+---
+
+# 📈 Future Roadmap
+
+### Phase 1
+
+* Complete OCR pipeline
+* AI document extraction
+* Automated Health Score
+* Automated Trust Index
+
+### Phase 2
+
+* Integration with cooperative accounting software
+* Cloud synchronization
+* API integrations
+
+### Phase 3
+
+* Real-time monitoring
+* Predictive analytics
+* Early warning alerts
+* Trend analysis
+
+### Phase 4
+
+* National Cooperative Intelligence Platform
+* Province and district dashboards
+* Regulatory analytics
+* Cooperative benchmarking
+* Mobile application
+
+---
+
+# 🚀 Future Scope
+
+The platform can later expand to support:
+
+* Microfinance institutions
+* Credit unions
+* Rural banks
+* Financial cooperatives
+* Government monitoring systems
+* NGO financial oversight
+
+---
+
+# 🌍 Social Impact
+
+Sahakari Nexus aims to contribute to:
+
+* Greater transparency
+* Easier interpretation of financial information
+* Better-informed decision making
+* Improved governance
+* Data-driven oversight
+* Increased public confidence in well-managed cooperatives
+
+---
+
+# 🎯 Project Status
+
+This repository contains the hackathon MVP.
+
+Current implementation focuses on:
+
+* User interface
+* Dashboard
+* Architecture
+* Workflow
+* Prototype modules
+
+Some AI and backend automation components are planned for future development.
+
+---
+
+# 👥 Target Users
+
+* Cooperative Members
+* Cooperative Management
+* Auditors
+* Regulators
+* Financial Institutions
+* Researchers
+
+---
+
+# 🤝 Contributing
+
+Contributions, suggestions, and feedback are welcome.
+
+---
+
+# 📄 License
+
+MIT License
+
+---
+
+# ⭐ Vision
+
+**Today, Sahakari Nexus demonstrates a smarter way to understand cooperative health.**
+
+**Our vision is to evolve it into Nepal's intelligent cooperative decision-support platform, helping members, management, and regulators make better-informed decisions through transparent, data-driven insights.**
