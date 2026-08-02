@@ -4,7 +4,7 @@ import "./globals.css";
 
 // Metadata helps browsers and search engines understand this application.
 export const metadata: Metadata = {
-  title: "Sahakari Nexus",
+  title: "Sahakar-Nexus",
   description: "AI Powered Cooperative Intelligence Platform",
 };
 
