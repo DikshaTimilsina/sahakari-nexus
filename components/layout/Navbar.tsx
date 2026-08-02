@@ -31,9 +31,9 @@ export function Navbar() {
             About
           </Link>
 
-          <Link href="/backend" className="transition-colors hover:text-cyan-300">
+       {/*  <Link href="/backend" className="transition-colors hover:text-cyan-300">
             Backend check
-          </Link>
+          </Link>*/}
         </div>
 
         <div className="flex items-center gap-4">
@@ -43,12 +43,12 @@ export function Navbar() {
           >
             Open dashboard
           </Link>
-          <Link
+         {/*<Link
             href="/backend"
             className="rounded-lg border border-cyan-400 px-4 py-2 text-sm font-semibold text-cyan-400 transition-colors hover:bg-cyan-950/70"
           >
             Backend check
-          </Link>
+          </Link>*/}
         </div>
       </nav>
     </header>
