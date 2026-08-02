@@ -3,7 +3,8 @@ uvicorn
 networkx
 pydantic
 python-multipart
-google-generativeai
+google-
+
 sqlalchemy
 psycopg-binary
 pdfplumber
