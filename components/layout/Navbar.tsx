@@ -30,14 +30,26 @@ export function Navbar() {
           <Link href="#about" className="transition-colors hover:text-cyan-300">
             About
           </Link>
+
+          <Link href="/backend" className="transition-colors hover:text-cyan-300">
+            Backend check
+          </Link>
         </div>
 
-        <Link
-          href="/dashboard"
-          className="rounded-lg bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition-colors hover:bg-cyan-300"
-        >
-          Open dashboard
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link
+            href="/dashboard"
+            className="rounded-lg bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition-colors hover:bg-cyan-300"
+          >
+            Open dashboard
+          </Link>
+          <Link
+            href="/backend"
+            className="rounded-lg border border-cyan-400 px-4 py-2 text-sm font-semibold text-cyan-400 transition-colors hover:bg-cyan-950/70"
+          >
+            Backend check
+          </Link>
+        </div>
       </nav>
     </header>
   );
